@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>管中的博客</title>
+  
+  <subtitle>in search of wonderful life</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://GuanZH95.github.io/"/>
+  <updated>2020-09-29T03:04:04.760Z</updated>
+  <id>http://GuanZH95.github.io/</id>
+  
+  <author>
+    <name>管中</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode刷题记录-1</title>
+    <link href="http://GuanZH95.github.io/2018/10/15/Leetcode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95-1/"/>
+    <id>http://GuanZH95.github.io/2018/10/15/Leetcode刷题记录-1/</id>
+    <published>2018-10-15T10:06:50.000Z</published>
+    <updated>2020-09-29T03:04:04.760Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>No.1 1-Two Sum从给定数组中找出两个相加等于给定值的数的下标，返回下标数组。数组要用malloc开辟一个2*sizeof(int)大小的空间，双层循环判断和是否为给定值。第一次返回了数本身的值，错。No.2 7-Reverse Integer给定signed int范围内的数，输出倒序数。如果倒序数超过signed int范围，返回0。首先判断给定数的正负，负数暂改为正；程序主体是给定数不断除以10、倒序数reverse_num不断乘10并与给定数除以10后的余数相加的循环，直至给定数变为0。在循环中实时判断reverse_num的范围时出现了错误，因为在定义的时候仍然用了int，导致测试用例溢出。改为long long reverse_num = 0,通过。最后注意调整reverse_num的符号。附各类型范围速查表：char -128 ~ +127 (1 Byte)short -32767 ~ + 32768 (2 Bytes)unsigned short 0 ~ 65536 (2 Bytes)int -2147483648 ~ +2147483647 (4 Bytes)unsigned int 0 ~ 4294967295 (4 Bytes)long == intlong long -9223372036854775808 ~ +9223372036854775807 (8 Bytes)double 1.7 * 10^308 (8 Bytes)No.3 9-Palindrome Number在不把给定数转换为字符数组的条件下，判断这个数是否为回文数，如121。而-121，10则不是。负数可以直接判定为false，对于正数，用No.2的方法求得它的倒序数，再判断与原数是否相等。No.4 13-Roman to Integer将给定的罗马数字转换为整数（范围从1到3999）。依次判断字符数组中的罗马字母，按相应值累加到待求数中，其中部分罗马字母需要联合它的下一个字母一起判断（如4,9,40,90）。直至读到最后一个元素&apos;\0&apos;结束。字符数组总把&apos;\0&apos;作为数组的最后一个元素，标志字符串的结束。</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code&gt;No.1 1-Two Sum
+从给定数组中找出两个相加等于给定值的数的下标，返回下标数组。
+数组要用malloc开辟一个2*sizeof(int)大小的空间，双层循环判断和是否为给定值。第一次返回了数本身的值，错。
+
+No.2 7-Reverse Integ
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>写英语文章最常犯错误总结</title>
+    <link href="http://GuanZH95.github.io/2018/10/15/%E5%86%99%E8%8B%B1%E8%AF%AD%E6%96%87%E7%AB%A0%E6%9C%80%E5%B8%B8%E7%8A%AF%E9%94%99%E8%AF%AF%E6%80%BB%E7%BB%93/"/>
+    <id>http://GuanZH95.github.io/2018/10/15/写英语文章最常犯错误总结/</id>
+    <published>2018-10-15T09:54:08.000Z</published>
+    <updated>2020-09-29T03:10:06.431Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>1.a, an, the误用冠词缺失是常见错误，能用则用，一个可数名词绝对不能光秃秃的。开始学冠词时我们就知道a和an是泛指，the是特指，要把握住“特指”的含义。2.使用非常长的句子试着一句话只表达一两个重点，也不能太短以致主语重复。如果需要介绍很多变量的含义，可以列一个表。3.句子主题不明句子开头不要放：位置、目的(To..., How to...)、原因、背景、时间(When...)、条件(Based on...)等等，要突出特点和重点、突出研究的对象，明白哪些是要强调的。4.respectively误用respectively一般放到句末，如果句子没有表达两组或以上对象的顺序对应关系，就不要乱用respectively。5.In this paper滥用In this paper一般用在introduction和conclusion中，不宜超过三次。有时用In this study更好，study是作者的工作，paper是呈现工作的方式。也可用In this research..., This paper present...6.数字和公式误用阿拉伯数字只可用来描述数据，而不是&quot;3 studies&quot;等等。不要直接把公式插入到句子中。7.图表说明误用Figure 6, Fig. 6, Tbl. 10是正确用法。8.其他such as适用于未列举完全的情况，不要和etc.一起用；application results, calculation results, simulation results, sketch map, layout scheme, limit condition, output performance等等是典型中式冗余英语; 句子不要以缩写或阿拉伯数字开头；用&quot;using this method&quot;&quot;by doing this&quot;替换&quot;by this way&quot;; 不要用obviously, that is to say, namely, too, abroad, here, our country, ...is shown as Figure 2...</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code&gt;1.a, an, the误用
+冠词缺失是常见错误，能用则用，一个可数名词绝对不能光秃秃的。开始学冠词时我们就知道a和an是泛指，the是特指，要把握住“特指”的含义。
+2.使用非常长的句子
+试着一句话只表达一两个重点，也不能太短以致主语重复。如果需要介绍很多
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
